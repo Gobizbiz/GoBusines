@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GoBiz - Solusi untuk Usaha Kuliner Anda</title>
+    <title>All You Can Eat</title>
 
     <!-- SEO Meta Tags -->
     <meta
@@ -39,6 +39,7 @@
     <!-- Favicon -->
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 
+    <!-- Link ke carousel CSS atau buat custom CSS -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -63,13 +64,32 @@
     <section class="hero">
       <div class="hero-text">
         <h1>
-          ALL You can Eat, makan sebebasnya dan seenaknya hanya dengan uang 1Jt
+          All You Can Eat, makan sebebasnya dan seenaknya hanya dengan uang Rp.1Jt
         </h1>
+        <p>Nikmati berbagai hidangan spesial dari restoran kami!</p>
       </div>
-      <!-- <div class="hero-image">
-            <img src="img/square.webp" alt="Hero Image" style=" margin-right   : 100px;" style=" margin-left   : 100px;">
-        </div> -->
+      <div class="hero-image">
+        <!-- Tambahkan slot gambar besar di sini -->
+        <img src="img/hero-image-placeholder.webp" alt="Makanan Lezat" />
+      </div>
     </section>
+
+    <!-- Carousel untuk gambar promo atau menu -->
+    <section class="promo-section">
+        <div class="promo-card">
+            <img src="img/promo1.webp" alt="Promo 1">
+            <p>Promo 1: Many Variant Meats!</p>
+        </div>
+        <div class="promo-card">
+            <img src="img/promo2.webp" alt="Promo 2">
+            <p>Promo 2: Cook Pot For a Cooking Sensation!</p>
+        </div>
+        <div class="promo-card">
+            <img src="img/promo3.webp" alt="Promo 3">
+            <p>Promo 3: Many Variant Dishes!</p>
+        </div>
+    </section>
+    
 
     <section class="services">
       <div class="service">
@@ -121,7 +141,7 @@
       </div>
       <div class="testimonial-video">
         <video controls>
-          <source src="video.mp4" type="video/mp4" />
+          <source src="img/Ads.mp4" type="img/Ads/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
@@ -145,6 +165,7 @@
       daftarButton.addEventListener("click", () => {
         window.location.href = "daftar.html";
       });
+
       // Dapatkan elemen modal
       var modal = document.getElementById("loginModal");
 

@@ -127,10 +127,10 @@ nav ul li a {
 }
 
 .hero-image img {
-    /* object-fit: cover; */
-    width: 200%;
-    height: 200%;
-    margin-left: 100;
+    max-width: 100%; /* Mengatur lebar maksimum agar gambar tidak terlalu besar */
+    height: auto; /* Mempertahankan aspek rasio gambar */
+    display: block; /* Agar bisa menggunakan margin auto */
+    margin: 0 auto; /* Menyelaraskan gambar ke tengah */
 }
 
 
@@ -221,3 +221,34 @@ footer {
     padding: 20px;
 }
 
+/* Promo Section Styles */
+.promo-section {
+    display: flex;
+    flex-direction: row-reverse; /* Menampilkan card dari kanan ke kiri */
+    gap: 20px; /* Jarak antara card */
+    justify-content: center;
+    padding: 50px;
+    background-color: #f7f7f7;
+}
+
+.promo-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Menghindari elemen meluap dari card */
+    width: 300px; /* Lebar setiap card */
+    text-align: center;
+    padding: 20px;
+}
+
+.promo-card img {
+    width: 100%; /* Gambar memenuhi card dengan lebar penuh */
+    height: auto; /* Menjaga aspek rasio gambar */
+    border-radius: 10px 10px 0 0; /* Membuat sudut atas gambar melengkung */
+}
+
+.promo-card p {
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+}
