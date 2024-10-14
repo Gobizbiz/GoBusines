@@ -298,16 +298,95 @@ footer {
     font-size: 1rem;
   }
   
+  .promo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+  }
+  
+  .promo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .promo-text {
+    flex: 1;
+    margin-right: 50px;
+  }
+  
   .promo-images {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 15px;
+    position: relative;
+    width: 500px;
+    height: 350px;
   }
   
   .promo-images img {
-    width: 100%;
+    position: absolute;
     border-radius: 10px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .promo-images img:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 150px;
+  }
+  
+  .promo-images img:nth-child(2) {
+    top: 50px;
+    right: 0;
+    width: 300px;
+    height: 200px;
+  }
+  
+  .promo-images img:nth-child(3) {
+    bottom: 0;
+    left: 100px;
+    width: 250px;
+    height: 200px;
+  }
+  
+  .promo-images img:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  .teppanyaki-section {
+    position: relative;
+    width: 100vw; /* Make the section span the full width of the viewport */
+    height: 300px; /* Adjust height if necessary */
+    background-image: url('img/teppanyaki-image.png');
+    /* Replace with the correct image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Remove any default margin */
+  }
+  
+  .teppanyaki-content {
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Optional: improve text visibility */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 100%;
+  }
+  
+  .teppanyaki-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .teppanyaki-content p {
+    font-size: 1.2rem;
   }
   
