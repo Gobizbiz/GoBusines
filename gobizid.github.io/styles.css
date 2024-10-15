@@ -518,56 +518,114 @@ footer {
   letter-spacing: 2px; /* Optional: adds spacing between letters */
 }
 
-/* Styles for the content section */
-.about-content {
-  text-align: left; /* Align left for a more formal look */
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: auto;
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header nav {
   display: flex;
-  flex-wrap: wrap; /* Make it responsive */
-  gap: 20px; /* Add spacing between the text and images */
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links .active {
+  color: #b00c0c;
+  font-weight: bold;
+}
+
+/* Header Section */
+.about-header {
+  background-image: url('img/your-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+/* About Content */
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-content div {
+  max-width: 600px;
 }
 
 .about-content h2 {
   font-size: 2.5rem;
   color: #b00c0c;
+  margin-bottom: 30px;
   font-family: 'Cursive', sans-serif;
-  margin-bottom: 20px;
+
 }
 
 .about-content p {
   font-size: 1.2rem;
-  color: #333;
+
   line-height: 1.8;
-  margin-bottom: 15px;
-  flex: 1 1 50%;
-  text-align: justify; /* Aligns the text evenly across the width */
+  margin-bottom: 25px;
+  text-align: justify;
 }
 
-/* Styles for the images section */
+/* Image section (fixing grid and alignment) */
 .about-images {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  flex: 1 1 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  max-width: 600px; /* Limit the width for image section */
+  margin-left: auto;
 }
 
 .about-images img {
-  width: 300px;
+  width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Make the images overlap slightly like in the KAKKOII example */
-.about-images img:nth-child(2) {
-  margin-top: -50px;
-}
+@media (max-width: 768px) {
+  .about-content {
+      flex-direction: column;
+      text-align: center;
+  }
 
-.about-images img:nth-child(3) {
-  margin-top: 30px;
+  .about-images {
+      grid-template-columns: 1fr; /* Make images stack in one column for smaller screens */
+  }
 }
 
 /* Footer Section */
@@ -581,14 +639,4 @@ footer {
 .about-footer p {
   margin: 0;
   font-size: 0.9rem;
-}
-
-@media (min-width: 768px) {
-  .about-content {
-      flex-direction: row; /* Display text and images side by side on larger screens */
-  }
-
-  .about-images {
-      justify-content: space-around;
-  }
 }
