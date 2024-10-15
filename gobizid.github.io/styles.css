@@ -498,3 +498,97 @@ footer {
   height: 2px; /* Ketebalan underline */
   background-color: #33475b; /* Warna underline */
 }
+
+/* Styles for the header section */
+.about-header {
+  background-image: url('img/your-image.jpg'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  height: 350px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.about-header h1 {
+  font-size: 48px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Makes the text more visible */
+  letter-spacing: 2px; /* Optional: adds spacing between letters */
+}
+
+/* Styles for the content section */
+.about-content {
+  text-align: left; /* Align left for a more formal look */
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap; /* Make it responsive */
+  gap: 20px; /* Add spacing between the text and images */
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  color: #b00c0c;
+  font-family: 'Cursive', sans-serif;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  flex: 1 1 50%;
+  text-align: justify; /* Aligns the text evenly across the width */
+}
+
+/* Styles for the images section */
+.about-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 1 1 50%;
+}
+
+.about-images img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* Make the images overlap slightly like in the KAKKOII example */
+.about-images img:nth-child(2) {
+  margin-top: -50px;
+}
+
+.about-images img:nth-child(3) {
+  margin-top: 30px;
+}
+
+/* Footer Section */
+.about-footer {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  color: #777;
+}
+
+.about-footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+      flex-direction: row; /* Display text and images side by side on larger screens */
+  }
+
+  .about-images {
+      justify-content: space-around;
+  }
+}
