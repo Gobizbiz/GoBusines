@@ -640,3 +640,88 @@ header nav {
   margin: 0;
   font-size: 0.9rem;
 }
+
+/* Style for the Visi dan Misi section with a background image */
+.vision-mission {
+  background-image: url('img/your-image.jpg'); /* Replace 'your-image.jpg' with the correct path to the image */
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+/* Overlay to make text more readable */
+.vision-mission::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 1;
+}
+
+.vision-mission-content, .stats {
+  position: relative;
+  z-index: 2; /* Ensure content appears above the overlay */
+}
+
+.vision-mission-content {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.vision-box, .mission-box {
+  background-color: rgba(0, 0, 0, 0.7); /* Darken the background slightly */
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.stat-item {
+  background-color: rgba(255, 0, 0, 0.8); /* Red box similar to your example */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+}
+
+.stat-item h3 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.stat-item p {
+  margin: 5px 0 0;
+}
+
+/* For small screens (responsive layout), stack the boxes vertically */
+@media (max-width: 768px) {
+  .vision-mission-content {
+    flex-direction: column;
+  }
+
+  .vision-box, .mission-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+
+  .stat-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
