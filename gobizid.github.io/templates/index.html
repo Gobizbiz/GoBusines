@@ -70,14 +70,17 @@
         </div>
         <ul class="nav-links">
           <li><a href="/" class="active" style="color: rgb(67, 67, 252); text-decoration: underline; ">Home</a></li>
-          <li><a href="/aboutus.html">About Us</a></li>
-          <li><a href="/PriceList.html">Price list</a></li>
-          <li><a href="/CS.html">Costumer Service</a></li>
-          <li><a href="/Compinf.html">Contact Us</a></li>
+          <li><a href="/aboutus">About Us</a></li>
+          <a href="/pricelist">Price List</a>
+          <a href="/cs">Customer Service</a>
+          <a href="/contact">Contact Us</a>
+
         </ul>
         <div class="auth-buttons">
           <button class="btn btn-signup" id="daftar-btn">Daftar</button>
           <button class="btn btn-login" id="login-btn">Login</button>
+        </div>
+        
         </div>
       </nav>
     </header>
@@ -92,7 +95,7 @@
       </div>
       <div class="hero-image">
         <!-- Tambahkan slot gambar besar di sini -->
-        <img src="img/hero-image-placeholder.webp" alt="Makanan Lezat" />
+        <img src="/static/img/hero-image-placeholder.webp" alt="Makanan Lezat" />
       </div>
     </section>
 
@@ -217,16 +220,15 @@
     <script>
       src="path_to_jscroot.js"
       const loginButton = document.getElementById("login-btn");
-
       loginButton.addEventListener("click", () => {
-        window.location.href = "Login.html";
+          window.location.href = "/login";
       });
-
+      
       const daftarButton = document.getElementById("daftar-btn");
-
       daftarButton.addEventListener("click", () => {
-        window.location.href = "daftar.html";
+          window.location.href = "/daftar";
       });
+      
 
       // Dapatkan elemen modal
       var modal = document.getElementById("loginModal");

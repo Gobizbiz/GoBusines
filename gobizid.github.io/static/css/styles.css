@@ -431,7 +431,7 @@ header {
 
 /* About Section */
 .about-header {
-  background-image: url('/static/img/your-image.jpg'); /* Ganti dengan gambar yang kamu upload */
+  background-image: url('/static/img/your-image.png'); /* Ganti dengan gambar yang kamu upload */
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -553,7 +553,7 @@ header nav {
 
 /* Header Section */
 .about-header {
-  background-image: url('img/your-image.jpg');
+  background-image: url('/static/img/your-image.jpg');
   background-size: cover;
   background-position: center;
   height: 300px;
