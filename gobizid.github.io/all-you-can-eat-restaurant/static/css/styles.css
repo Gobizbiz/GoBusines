@@ -362,7 +362,7 @@ footer {
     position: relative;
     width: 100vw; /* Make the section span the full width of the viewport */
     height: 300px; /* Adjust height if necessary */
-    background-image: url('img/teppanyaki-image.png');
+    background-image: url('/static/img/teppanyaki-image.png');
     /* Replace with the correct image path */
     background-size: cover;
     background-position: center;
@@ -431,7 +431,7 @@ header {
 
 /* About Section */
 .about-header {
-  background-image: url('img/your-image.jpg'); /* Ganti dengan gambar yang kamu upload */
+  background-image: url('/static/img/your-image.jpg'); /* Ganti dengan gambar yang kamu upload */
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -501,7 +501,7 @@ footer {
 
 /* Styles for the header section */
 .about-header {
-  background-image: url('img/your-image.jpg'); /* Replace with your actual image path */
+  background-image: url('/static/img/your-image.jpg'); /* Replace with your actual image path */
   background-size: cover;
   background-position: center;
   height: 350px; /* Adjust as needed */
@@ -643,7 +643,7 @@ header nav {
 
 /* Style for the Visi dan Misi section with a background image */
 .vision-mission {
-  background-image: url('img/your-image.jpg'); /* Replace 'your-image.jpg' with the correct path to the image */
+  background-image: url('/static/img/your-image.jpg'); /* Replace 'your-image.jpg' with the correct path to the image */
   background-size: cover;
   background-position: center;
   padding: 50px;
