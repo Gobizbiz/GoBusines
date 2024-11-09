@@ -20,6 +20,734 @@
         height: 2px; /* Ketebalan underline */
         background-color: #33475b; /* Warna underline */
       }
+      /* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #fff;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Styling Form Login */
+.login-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #45a049;
+}
+
+
+
+.logo img {
+  max-height: 60px;
+  margin-right: 90px;
+  
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+  margin-left: auto; /* This pushes the buttons to the right */
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-signup {
+  background-color: #6c63ff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.btn-login {
+  background-color: #fff;
+  color: #6c63ff;
+  border: 1px solid #6c63ff;
+  border-radius: 5px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hero-image img {
+  max-width: 100%; /* Mengatur lebar maksimum agar gambar tidak terlalu besar */
+  height: auto; /* Mempertahankan aspek rasio gambar */
+  display: block; /* Agar bisa menggunakan margin auto */
+  margin: 0 auto; /* Menyelaraskan gambar ke tengah */
+}
+
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 50px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.service {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service h2 {
+  font-size: 1.2rem;
+  color: #6c63ff;
+  margin-bottom: 10px;
+}
+
+.service span {
+  color: #ff6f61;
+}
+
+.partners {
+  padding: 50px;
+  text-align: center;
+}
+
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.partner-logos img {
+  max-width: 150px;
+  height: auto;
+  margin: 10px;
+}
+
+.registration {
+  background-color: #f7f7f7;
+  padding: 50px;
+  text-align: center;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.step h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.testimonials {
+  padding: 50px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.testimonial {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.testimonial-video video {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Promo Section Styles */
+.promo-section {
+  display: flex;
+  flex-direction: row-reverse; /* Menampilkan card dari kanan ke kiri */
+  gap: 20px; /* Jarak antara card */
+  justify-content: center;
+  padding: 50px;
+  background-color: #f7f7f7;
+}
+
+.promo-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Menghindari elemen meluap dari card */
+  width: 300px; /* Lebar setiap card */
+  text-align: center;
+  padding: 20px;
+}
+
+.promo-card img {
+  width: 100%; /* Gambar memenuhi card dengan lebar penuh */
+  height: auto; /* Menjaga aspek rasio gambar */
+  border-radius: 10px 10px 0 0; /* Membuat sudut atas gambar melengkung */
+}
+
+.promo-card p {
+  padding: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.promo-section {
+  background-color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+.promo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.promo-text h1 {
+  font-size: 2.5rem;
+  color: #d32f2f;
+}
+
+.promo-text h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: #d32f2f;
+}
+
+.promo-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.info-box {
+  background-color: #d32f2f;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.info-box h3 {
+  font-size: 2rem;
+}
+
+.info-box p {
+  font-size: 1rem;
+}
+
+.promo-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.promo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+}
+
+.promo-text {
+  flex: 1;
+  margin-right: 50px;
+}
+
+.promo-images {
+  position: relative;
+  width: 500px;
+  height: 350px;
+}
+
+.promo-images img {
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.promo-images img:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 150px;
+}
+
+.promo-images img:nth-child(2) {
+  top: 50px;
+  right: 0;
+  width: 300px;
+  height: 200px;
+}
+
+.promo-images img:nth-child(3) {
+  bottom: 0;
+  left: 100px;
+  width: 250px;
+  height: 200px;
+}
+
+.promo-images img:hover {
+  transform: scale(1.05);
+}
+
+
+.teppanyaki-section {
+  position: relative;
+  width: 100vw; /* Make the section span the full width of the viewport */
+  height: 300px; /* Adjust height if necessary */
+  background-image: url('/static/img/teppanyaki-image.png');
+  /* Replace with the correct image path */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* Remove any default margin */
+}
+
+.teppanyaki-content {
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* Optional: improve text visibility */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.teppanyaki-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.teppanyaki-content p {
+  font-size: 1.2rem;
+}
+
+/* General styles */
+body, html {
+margin: 0;
+padding: 0;
+font-family: 'Arial', sans-serif;
+box-sizing: border-box;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 50px;
+background-color: white;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+height: 60px;
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+gap: 20px;
+}
+
+.nav-links li a {
+text-decoration: none;
+color: #33475b;
+font-size: 16px;
+position: relative;
+}
+
+.nav-links li a.active, .nav-links li a:hover {
+color: rgb(67, 67, 252);
+text-decoration: underline;
+}
+
+/* About Section */
+.about-header {
+background-image: url('/static/img/your-image.png'); /* Ganti dengan gambar yang kamu upload */
+background-size: cover;
+background-position: center;
+height: 300px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: white;
+}
+
+.about-header h1 {
+font-size: 48px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Content Section */
+.about-content {
+padding: 50px;
+background-color: #f7f7f7;
+text-align: center;
+}
+
+.about-content h2 {
+font-size: 32px;
+color: #b00c0c;
+font-family: 'Cursive', sans-serif;
+margin-bottom: 20px;
+}
+
+.about-content p {
+font-size: 18px;
+color: #333;
+line-height: 1.6;
+margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+padding: 20px;
+text-align: center;
+background-color: #33475b;
+color: white;
+}
+
+.footer-content p {
+margin: 0;
+}
+
+.nav-link {
+text-decoration: none; /* Hilangkan default underline */
+color: #33475b; /* Warna teks */
+font-size: 16px;
+position: relative; /* Untuk mengatur posisi underline manual */
+}
+
+/* Membuat underline pada tombol saat aktif */
+.nav-link.active::after,
+.nav-link:hover::after {
+content: "";
+position: absolute;
+left: 0;
+bottom: -3px; /* Jarak underline dari teks */
+width: 100%;
+height: 2px; /* Ketebalan underline */
+background-color: #33475b; /* Warna underline */
+}
+
+/* Styles for the header section */
+.about-header {
+background-image: url('/static/img/your-image.jpg'); /* Replace with your actual image path */
+background-size: cover;
+background-position: center;
+height: 350px; /* Adjust as needed */
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: white;
+}
+
+.about-header h1 {
+font-size: 48px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Makes the text more visible */
+letter-spacing: 2px; /* Optional: adds spacing between letters */
+}
+
+/* General Styles */
+body {
+font-family: 'Arial', sans-serif;
+color: #333;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+header nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+background-color: #fff;
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+gap: 20px;
+}
+
+.nav-links a {
+text-decoration: none;
+color: #333;
+}
+
+.nav-links .active {
+color: #b00c0c;
+font-weight: bold;
+}
+
+/* Header Section */
+.about-header {
+background-image: url('/static/img/your-image.jpg');
+background-size: cover;
+background-position: center;
+height: 300px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-header h1 {
+font-size: 3rem;
+margin: 0;
+}
+
+/* About Content */
+.about-content {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+gap: 40px;
+padding: 60px 20px;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.about-content div {
+max-width: 600px;
+}
+
+.about-content h2 {
+font-size: 2.5rem;
+color: #b00c0c;
+margin-bottom: 30px;
+font-family: 'Cursive', sans-serif;
+
+}
+
+.about-content p {
+font-size: 1.2rem;
+
+line-height: 1.8;
+margin-bottom: 25px;
+text-align: justify;
+}
+
+/* Image section (fixing grid and alignment) */
+.about-images {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 20px;
+max-width: 600px; /* Limit the width for image section */
+margin-left: auto;
+}
+
+.about-images img {
+width: 100%;
+height: auto;
+border-radius: 10px;
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+.about-content {
+    flex-direction: column;
+    text-align: center;
+}
+
+.about-images {
+    grid-template-columns: 1fr; /* Make images stack in one column for smaller screens */
+}
+}
+
+/* Footer Section */
+.about-footer {
+background-color: #f4f4f4;
+padding: 20px;
+text-align: center;
+color: #777;
+}
+
+.about-footer p {
+margin: 0;
+font-size: 0.9rem;
+}
+
+/* Style for the Visi dan Misi section with a background image */
+.vision-mission {
+background-image: url('/static/img/your-image.jpg'); /* Replace 'your-image.jpg' with the correct path to the image */
+background-size: cover;
+background-position: center;
+padding: 50px;
+color: white;
+position: relative;
+text-align: center;
+}
+
+/* Overlay to make text more readable */
+.vision-mission::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+z-index: 1;
+}
+
+.vision-mission-content, .stats {
+position: relative;
+z-index: 2; /* Ensure content appears above the overlay */
+}
+
+.vision-mission-content {
+display: flex;
+justify-content: space-around;
+margin-bottom: 30px;
+}
+
+.vision-box, .mission-box {
+background-color: rgba(0, 0, 0, 0.7); /* Darken the background slightly */
+padding: 20px;
+border-radius: 10px;
+width: 45%;
+}
+
+.stats {
+display: flex;
+justify-content: space-around;
+margin-top: 30px;
+}
+
+.stat-item {
+background-color: rgba(255, 0, 0, 0.8); /* Red box similar to your example */
+color: white;
+padding: 20px;
+border-radius: 10px;
+width: 30%;
+}
+
+.stat-item h3 {
+margin: 0;
+font-size: 2em;
+}
+
+.stat-item p {
+margin: 5px 0 0;
+}
+
+/* For small screens (responsive layout), stack the boxes vertically */
+@media (max-width: 768px) {
+.vision-mission-content {
+  flex-direction: column;
+}
+
+.vision-box, .mission-box {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.stats {
+  flex-direction: column;
+}
+
+.stat-item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+}
+
     </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -60,7 +788,7 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 
     <!-- Link ke carousel CSS atau buat custom CSS -->
-    <link rel="stylesheet" href="static/css/styles.css">
+    <!-- <link rel="stylesheet" href="static/css/styles.css"> -->
   </head>
   <body>
     <header>
